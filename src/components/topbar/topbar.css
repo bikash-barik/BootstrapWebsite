@@ -1,0 +1,151 @@
+.topbarContainer {
+  /* height: 50px; */
+  width: 100%;
+  background-color: #574f4f;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+@media screen and (max-width: 768px)  {
+  .topbarContainer {
+  background-color: transparent;
+  overflow: hidden;
+  }
+}
+
+.topbarLeft {
+  flex: 3;
+}
+
+.logo{
+margin-right: 8px;
+font-size: 0px;
+width:100px;
+@media(min-width:768px){
+ margin-right:180px;
+}
+}
+
+a{
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.topbarCenter {
+  flex: 5;
+}
+
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+}
+@media screen and (max-width: 768px)  {
+  .searchbar {
+    display: none;
+  }
+}
+
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+
+.searchInput {
+  border: none;
+  width: 70%;
+}
+@media screen and (max-width: 768px)  {
+  .searchInput {
+    display: none;
+  }
+}
+.searchInput:focus {
+  outline: none;
+}
+
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+@media screen and (max-width: 768px)  {
+  .topbarRight {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #574f4f;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.topbarLink {
+  margin-right: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.topbarIcons {
+  display: flex;
+}
+@media screen and (max-width: 768px)  {
+  .topbarIcons {
+    padding:0px 5px 0px 15px;
+  
+  }
+  }
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px)  {
+  .topbarLink{
+    display: none;
+    overflow: hidden;
+  }
+}
